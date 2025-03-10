@@ -1,0 +1,38 @@
+# nacos配置中心相关配置
+#spring.cloud.nacos.config.server-addr=10.223.24.2:8848
+#spring.cloud.nacos.config.namespace=yyyf_test
+#spring.cloud.nacos.config.file-extension=yaml
+#spring.cloud.nacos.config.group=DEFAULT_GROUP
+#spring.cloud.nacos.username=yyyf_test
+#spring.cloud.nacos.password=yyyf_test@123qwer
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      datasource:
+        master:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://10.223.24.4:3306/smart?useUnicode=true&characterEncoding=utf-8&rewriteBatchedStatements=true&useSSL=false&serverTimezone=Asia/Shanghai
+          username: smart
+          password: c7Z$t8J0q2vR6Kiu
+          type: com.zaxxer.hikari.HikariDataSource
+          hikari:
+            min-idle: 20
+            max-pool-size: 50
+            idle-timeout: 30000
+            max-lifetime: 1800000
+            connection-timeout: 30000
+            connection-test-query: select 1
+        slave:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://10.223.24.4:3306/smart?useUnicode=true&characterEncoding=utf-8&rewriteBatchedStatements=true&useSSL=false&serverTimezone=Asia/Shanghai
+          username: smart
+          password: c7Z$t8J0q2vR6Kiu
+          type: com.zaxxer.hikari.HikariDataSource
+          hikari:
+            min-idle: 20
+            max-pool-size: 50
+            idle-timeout: 30000
+            max-lifetime: 1800000
+            connection-timeout: 30000
+            connection-test-query: select 1
