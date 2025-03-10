@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author caozk929
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.eking")
 public class WebApplication {
     public static void main(String[] args) {
         SpringApplication.run(WebApplication.class, args);
