@@ -25,6 +25,7 @@
         <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
         <knife4j.version>4.4.0</knife4j.version>
         <caffeine.version>3.1.8</caffeine.version>
+        <hutool.version>5.8.23</hutool.version>
     </properties>
 
     <modules>
@@ -118,6 +119,13 @@
                 <groupId>com.github.ben-manes.caffeine</groupId>
                 <artifactId>caffeine</artifactId>
                 <version>${caffeine.version}</version>
+            </dependency>
+            
+            <!-- 添加Hutool依赖管理 -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
