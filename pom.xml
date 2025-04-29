@@ -24,6 +24,7 @@
         <lombok.version>1.18.30</lombok.version>
         <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
         <knife4j.version>4.4.0</knife4j.version>
+        <caffeine.version>3.1.8</caffeine.version>
     </properties>
 
     <modules>
@@ -111,6 +112,12 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
                 <version>2.7.18</version>
+            </dependency>
+            <!-- 添加Caffeine依赖管理 -->
+            <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>caffeine</artifactId>
+                <version>${caffeine.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
