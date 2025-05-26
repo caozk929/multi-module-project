@@ -26,6 +26,7 @@
         <knife4j.version>4.4.0</knife4j.version>
         <caffeine.version>3.1.8</caffeine.version>
         <hutool.version>5.8.23</hutool.version>
+        <spring.ai.version>1.0.0</spring.ai.version>
     </properties>
 
     <modules>
@@ -87,6 +88,14 @@
                 <artifactId>infra-message</artifactId>
                 <version>${project.version}</version>
             </dependency>
+
+            <!-- Spring AI BOM 依赖 -->
+            <dependency>
+                <groupId>org.springframework.ai</groupId>
+                <artifactId>spring-ai-bom</artifactId>
+                <version>${spring.ai.version}</version>
+            </dependency>
+
             <!-- 新增 MyBatis-Plus 依赖 -->
             <dependency>
                 <groupId>com.baomidou</groupId>
