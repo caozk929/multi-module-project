@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.example</groupId>
+    <groupId>com.eking</groupId>
     <artifactId>multi-module-project</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -26,7 +26,7 @@
         <knife4j.version>4.4.0</knife4j.version>
         <caffeine.version>3.1.8</caffeine.version>
         <hutool.version>5.8.23</hutool.version>
-        <spring.ai.version>1.0.0</spring.ai.version>
+        <spring.ai.version>1.0.3</spring.ai.version>
     </properties>
 
     <modules>
@@ -60,40 +60,33 @@
         <dependencies>
             <!-- 项目内模块依赖 -->
             <dependency>
-                <groupId>com.example</groupId>
+                <groupId>com.eking</groupId>
                 <artifactId>common</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.example</groupId>
+                <groupId>com.eking</groupId>
                 <artifactId>infra-cache</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.example</groupId>
+                <groupId>com.eking</groupId>
                 <artifactId>infra-datasource</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.example</groupId>
+                <groupId>com.eking</groupId>
                 <artifactId>infra-job</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.example</groupId>
+                <groupId>com.eking</groupId>
                 <artifactId>infra-message</artifactId>
                 <version>${project.version}</version>
-            </dependency>
-
-            <!-- Spring AI BOM 依赖 -->
-            <dependency>
-                <groupId>org.springframework.ai</groupId>
-                <artifactId>spring-ai-bom</artifactId>
-                <version>${spring.ai.version}</version>
             </dependency>
 
             <!-- 新增 MyBatis-Plus 依赖 -->
@@ -129,13 +122,22 @@
                 <artifactId>caffeine</artifactId>
                 <version>${caffeine.version}</version>
             </dependency>
-            
+
             <!-- 添加Hutool依赖管理 -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.ai</groupId>
+                <artifactId>spring-ai-bom</artifactId>
+                <version>${spring.ai.version}</version>
+                <type>pom</type>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 

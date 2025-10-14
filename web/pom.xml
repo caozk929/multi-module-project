@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.example</groupId>
+        <groupId>com.eking</groupId>
         <artifactId>multi-module-project</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
@@ -13,23 +13,23 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.example</groupId>
+            <groupId>com.eking</groupId>
             <artifactId>common</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.example</groupId>
+            <groupId>com.eking</groupId>
             <artifactId>infra-cache</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.example</groupId>
+            <groupId>com.eking</groupId>
             <artifactId>infra-datasource</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.example</groupId>
+            <groupId>com.eking</groupId>
             <artifactId>infra-job</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.example</groupId>
+            <groupId>com.eking</groupId>
             <artifactId>infra-message</artifactId>
         </dependency>
 
@@ -45,7 +45,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.example.web.WebApplication</mainClass>
+                    <mainClass>com.eking.web.WebApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
