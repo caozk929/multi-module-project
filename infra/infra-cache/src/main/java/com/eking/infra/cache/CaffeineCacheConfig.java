@@ -48,7 +48,7 @@ public class CaffeineCacheConfig {
                             // 1秒 = 1000毫秒 = 1000000微秒 = 1000000000纳秒
                             return expirableValue.getExpireTime() * 1000000;
                         }
-                        return 24L * 60 * 60 * 1000000; // 默认1天
+                        return TimeUnit.DAYS.toNanos(1); // 默认1天
                     }
 
                     @Override
