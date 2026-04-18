@@ -1,1 +1,1 @@
-93ac598a84242f899301e58b6f412e6476f5a01e refactor(CaffeineCacheConfig): 使用TimeUnit类简化默认过期时间计算
+4056ff4a5b3c8e2d7f1a9b0c6e4d8f2a1b3c5e7d 增加对.graphify文件的忽略规则
